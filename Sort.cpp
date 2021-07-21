@@ -134,32 +134,6 @@ void Selection_Decrease_rec(T *arr, int size, int start)
 	Selection_Decrease_rec(arr, size, start + 1);
 }
 
-void changeMax(int *arr, int *arr2, int size)
-{
-	int max = 0;
-	int max2 = 0;
 
-	for (int j = 1; j < size; ++j)
-	{
-		if (arr[max] < arr[j])
-		{
-			max = j;
-		}
-
-		if (arr2[max2] < arr2[j])
-		{
-			max2 = j;
-		}
-	}
-	int tmp = arr[max];
-	arr[max] = arr2[max2];
-	arr2[max2] = tmp;
-
-	for (int j = 0; j < size; ++j)
-	{
-		cout << arr2[j] << " ";
-	}
-	cout << endl;
-}
 
 
